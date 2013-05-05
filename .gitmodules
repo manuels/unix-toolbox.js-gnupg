@@ -1,0 +1,12 @@
+[submodule "zlib"]
+	path = zlib
+	url = ../zlib
+[submodule "libgpg-error"]
+	path = libgpg-error
+	url = ../libgpg-error
+[submodule "libassuan"]
+	path = libassuan
+	url = ../libassuan/
+[submodule "libksba"]
+	path = libksba
+	url = ../libksba/
