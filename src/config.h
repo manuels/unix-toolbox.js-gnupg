@@ -138,7 +138,7 @@
 #define HAVE_FLOCKFILE 1
 
 /* Define to 1 if you have the `fopencookie' function. */
-#define HAVE_FOPENCOOKIE 1
+/* #undef HAVE_FOPENCOOKIE */
 
 /* Define to 1 if you have the `fork' function. */
 #define HAVE_FORK 1
@@ -192,7 +192,7 @@
 #define HAVE_GMTIME_R 1
 
 /* Define if you have the iconv() function and it works. */
-#define HAVE_ICONV 1
+/* #undef HAVE_ICONV */
 
 /* Define to 1 if the system has the type `intmax_t'. */
 #define HAVE_INTMAX_T 1
@@ -261,7 +261,7 @@
 #define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the `memrchr' function. */
-#define HAVE_MEMRCHR 1
+/* #undef HAVE_MEMRCHR */
 
 /* Define to 1 if you have the `mkdtemp' function. */
 #define HAVE_MKDTEMP 1
@@ -288,7 +288,7 @@
 #define HAVE_PWD_H 1
 
 /* Define to 1 if you have the `raise' function. */
-#define HAVE_RAISE 1
+/* #undef HAVE_RAISE */
 
 /* Define to 1 if you have the `rand' function. */
 #define HAVE_RAND 1
@@ -366,7 +366,7 @@
 #define HAVE_STRPBRK 1
 
 /* Define to 1 if you have the `strsep' function. */
-#define HAVE_STRSEP 1
+/* #undef HAVE_STRSEP */
 
 /* Define to 1 if you have the `strtol' function. */
 #define HAVE_STRTOL 1

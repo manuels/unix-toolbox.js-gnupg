@@ -10422,7 +10422,7 @@ int main ()
 }
 _ACEOF
 if ac_fn_c_try_run "$LINENO"; then :
-  am_cv_func_iconv_works=yes
+  am_cv_func_iconv_works=no
 else
   am_cv_func_iconv_works=no
 fi
@@ -12030,7 +12030,8 @@ $as_echo "#define STDC_HEADERS 1" >>confdefs.h
 
 fi
 
-for ac_header in string.h unistd.h langinfo.h termio.h locale.h getopt.h
+#for ac_header in string.h unistd.h langinfo.h termio.h locale.h getopt.h
+for ac_header in string.h unistd.h langinfo.h locale.h getopt.h
 do :
   as_ac_Header=`$as_echo "ac_cv_header_$ac_header" | $as_tr_sh`
 ac_fn_c_check_header_mongrel "$LINENO" "$ac_header" "$as_ac_Header" "$ac_includes_default"
@@ -13355,7 +13356,8 @@ _ACEOF
 fi
 done
 
-for ac_func in atexit raise getpagesize strftime nl_langinfo setlocale
+#for ac_func in atexit raise getpagesize strftime nl_langinfo setlocale
+for ac_func in atexit getpagesize strftime nl_langinfo setlocale
 do :
   as_ac_var=`$as_echo "ac_cv_func_$ac_func" | $as_tr_sh`
 ac_fn_c_check_func "$LINENO" "$ac_func" "$as_ac_var"
@@ -13417,7 +13419,8 @@ fi
 #
 # These are needed by libjnlib - fixme: we should use a jnlib.m4
 # Note:  We already checked pwd.h.
-for ac_func in memicmp stpcpy strsep strlwr strtoul memmove stricmp strtol
+#for ac_func in memicmp stpcpy strsep strlwr strtoul memmove stricmp strtol
+for ac_func in memicmp stpcpy strlwr strtoul memmove stricmp strtol
 do :
   as_ac_var=`$as_echo "ac_cv_func_$ac_func" | $as_tr_sh`
 ac_fn_c_check_func "$LINENO" "$ac_func" "$as_ac_var"
@@ -13429,7 +13432,8 @@ _ACEOF
 fi
 done
 
-for ac_func in memrchr isascii timegm getrusage setrlimit stat setlocale
+#for ac_func in memrchr isascii timegm getrusage setrlimit stat setlocale
+for ac_func in isascii timegm getrusage setrlimit stat setlocale
 do :
   as_ac_var=`$as_echo "ac_cv_func_$ac_func" | $as_tr_sh`
 ac_fn_c_check_func "$LINENO" "$ac_func" "$as_ac_var"
@@ -13441,7 +13445,8 @@ _ACEOF
 fi
 done
 
-for ac_func in flockfile funlockfile fopencookie funopen getpwnam getpwuid
+#for ac_func in flockfile funlockfile fopencookie funopen getpwnam getpwuid
+for ac_func in flockfile funlockfile funopen getpwnam getpwuid
 do :
   as_ac_var=`$as_echo "ac_cv_func_$ac_func" | $as_tr_sh`
 ac_fn_c_check_func "$LINENO" "$ac_func" "$as_ac_var"

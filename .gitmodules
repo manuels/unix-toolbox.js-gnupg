@@ -13,3 +13,6 @@
 [submodule "libgcrypt"]
 	path = libgcrypt
 	url = ../libgcrypt
+[submodule "toolbox-base"]
+	path = toolbox-base
+	url = ../../base
