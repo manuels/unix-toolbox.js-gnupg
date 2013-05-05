@@ -45,6 +45,9 @@
 #include <errno.h>
 #include <unistd.h>
 
+#include <sys/socket.h>
+#include <net/netdb.h>
+
 #ifdef HAVE_W32_SYSTEM
 # include <windows.h>
 #else /*!HAVE_W32_SYSTEM*/
@@ -54,7 +57,7 @@
 # include <time.h>
 # include <netinet/in.h>
 # include <arpa/inet.h>
-# include <netdb.h>
+//# include <netdb.h>
 #endif /*!HAVE_W32_SYSTEM*/
 
 #ifdef HTTP_USE_GNUTLS

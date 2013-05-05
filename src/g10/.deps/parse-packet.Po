@@ -1,1 +1,194 @@
-# dummy
+parse-packet.o: parse-packet.c ../config.h \
+  /home/manuel/lib/emscripten/system/include/libc/stdio.h \
+  /home/manuel/lib/emscripten/system/include/libc/_ansi.h \
+  /home/manuel/lib/emscripten/system/include/libc/newlib.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/config.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/ieeefp.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/features.h \
+  /home/manuel/lib/emscripten/system/include/libc/stddef.h \
+  /home/manuel/lib/emscripten/system/include/libc/stdarg.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/reent.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/_types.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/_types.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/_default_types.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/lock.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/types.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/types.h \
+  ../gl/stdint.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/sched.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/stdio.h \
+  /home/manuel/lib/emscripten/system/include/libc/stdlib.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/stdlib.h \
+  ../gl/alloca.h \
+  /home/manuel/lib/emscripten/system/include/libc/string.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/string.h \
+  /home/manuel/lib/emscripten/system/include/libc/assert.h gpg.h \
+  /home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/gpg-error.h \
+  /home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/gcrypt.h \
+  /home/manuel/lib/emscripten/system/include/sys/socket.h \
+  /home/manuel/lib/emscripten/system/include/netdb.h \
+  /home/manuel/lib/emscripten/system/include/sys/select.h \
+  /home/manuel/lib/emscripten/system/include/sys/uio.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/time.h \
+  /home/manuel/lib/emscripten/system/include/libc/time.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/time.h \
+  /home/manuel/lib/emscripten/system/include/libc/signal.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/signal.h \
+  /home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/gcrypt-module.h \
+  packet.h ../include/types.h \
+  /home/manuel/lib/emscripten/system/include/libc/inttypes.h \
+  ../common/iobuf.h ../jnlib/strlist.h ../include/cipher.h filter.h \
+  ../common/openpgpdefs.h ../common/util.h \
+  /home/manuel/lib/emscripten/system/include/libc/errno.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/errno.h \
+  ../common/../jnlib/logging.h ../jnlib/mischelp.h \
+  ../common/../jnlib/argparse.h ../jnlib/types.h \
+  ../common/../jnlib/stringhelp.h ../common/../jnlib/dotlock.h \
+  ../common/../jnlib/utf8conv.h ../common/../jnlib/dynload.h \
+  /home/manuel/lib/emscripten/system/include/dlfcn.h ../common/init.h \
+  ../common/estream-printf.h photoid.h options.h main.h keydb.h \
+  /home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/assuan.h \
+  /home/manuel/lib/emscripten/system/include/libc/unistd.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/unistd.h \
+  ../common/session-env.h ../common/i18n.h \
+  /home/manuel/lib/emscripten/system/include/libc/locale.h
+
+../config.h:
+
+/home/manuel/lib/emscripten/system/include/libc/stdio.h:
+
+/home/manuel/lib/emscripten/system/include/libc/_ansi.h:
+
+/home/manuel/lib/emscripten/system/include/libc/newlib.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/config.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/ieeefp.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/features.h:
+
+/home/manuel/lib/emscripten/system/include/libc/stddef.h:
+
+/home/manuel/lib/emscripten/system/include/libc/stdarg.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/reent.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/_types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/_types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/_default_types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/lock.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/types.h:
+
+../gl/stdint.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/sched.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/stdio.h:
+
+/home/manuel/lib/emscripten/system/include/libc/stdlib.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/stdlib.h:
+
+../gl/alloca.h:
+
+/home/manuel/lib/emscripten/system/include/libc/string.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/string.h:
+
+/home/manuel/lib/emscripten/system/include/libc/assert.h:
+
+gpg.h:
+
+/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/gpg-error.h:
+
+/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/gcrypt.h:
+
+/home/manuel/lib/emscripten/system/include/sys/socket.h:
+
+/home/manuel/lib/emscripten/system/include/netdb.h:
+
+/home/manuel/lib/emscripten/system/include/sys/select.h:
+
+/home/manuel/lib/emscripten/system/include/sys/uio.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/time.h:
+
+/home/manuel/lib/emscripten/system/include/libc/time.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/time.h:
+
+/home/manuel/lib/emscripten/system/include/libc/signal.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/signal.h:
+
+/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/gcrypt-module.h:
+
+packet.h:
+
+../include/types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/inttypes.h:
+
+../common/iobuf.h:
+
+../jnlib/strlist.h:
+
+../include/cipher.h:
+
+filter.h:
+
+../common/openpgpdefs.h:
+
+../common/util.h:
+
+/home/manuel/lib/emscripten/system/include/libc/errno.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/errno.h:
+
+../common/../jnlib/logging.h:
+
+../jnlib/mischelp.h:
+
+../common/../jnlib/argparse.h:
+
+../jnlib/types.h:
+
+../common/../jnlib/stringhelp.h:
+
+../common/../jnlib/dotlock.h:
+
+../common/../jnlib/utf8conv.h:
+
+../common/../jnlib/dynload.h:
+
+/home/manuel/lib/emscripten/system/include/dlfcn.h:
+
+../common/init.h:
+
+../common/estream-printf.h:
+
+photoid.h:
+
+options.h:
+
+main.h:
+
+keydb.h:
+
+/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/assuan.h:
+
+/home/manuel/lib/emscripten/system/include/libc/unistd.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/unistd.h:
+
+../common/session-env.h:
+
+../common/i18n.h:
+
+/home/manuel/lib/emscripten/system/include/libc/locale.h:
