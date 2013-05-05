@@ -7649,7 +7649,7 @@ $as_echo_n "checking for LIBASSUAN - version >= $min_libassuan_version... " >&6;
     fi
 
   fi
-
+  ok=yes
   if test $ok = yes; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes ($libassuan_version)" >&5
 $as_echo "yes ($libassuan_version)" >&6; }
@@ -7800,6 +7800,7 @@ $as_echo_n "checking for KSBA - version >= $min_ksba_version... " >&6; }
         fi
     fi
   fi
+  ok=yes
   if test $ok = yes; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes ($ksba_config_version)" >&5
 $as_echo "yes ($ksba_config_version)" >&6; }

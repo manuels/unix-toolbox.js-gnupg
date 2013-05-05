@@ -10,3 +10,6 @@
 [submodule "libksba"]
 	path = libksba
 	url = ../libksba/
+[submodule "libgcrypt"]
+	path = libgcrypt
+	url = ../libgcrypt

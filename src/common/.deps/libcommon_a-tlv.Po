@@ -1,0 +1,81 @@
+libcommon_a-tlv.o: tlv.c ../config.h \
+  /home/manuel/lib/emscripten/system/include/libc/stdio.h \
+  /home/manuel/lib/emscripten/system/include/libc/_ansi.h \
+  /home/manuel/lib/emscripten/system/include/libc/newlib.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/config.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/ieeefp.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/features.h \
+  /home/manuel/lib/emscripten/system/include/libc/stddef.h \
+  /home/manuel/lib/emscripten/system/include/libc/stdarg.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/reent.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/_types.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/_types.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/_default_types.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/lock.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/types.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/types.h \
+  ../gl/stdint.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/sched.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/stdio.h \
+  /home/manuel/lib/emscripten/system/include/libc/stdlib.h \
+  /home/manuel/lib/emscripten/system/include/libc/machine/stdlib.h \
+  ../gl/alloca.h \
+  /home/manuel/lib/emscripten/system/include/libc/string.h \
+  /home/manuel/lib/emscripten/system/include/libc/sys/string.h \
+  /home/manuel/lib/emscripten/system/include/libc/assert.h \
+  /home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/gpg-error.h \
+  tlv.h
+
+../config.h:
+
+/home/manuel/lib/emscripten/system/include/libc/stdio.h:
+
+/home/manuel/lib/emscripten/system/include/libc/_ansi.h:
+
+/home/manuel/lib/emscripten/system/include/libc/newlib.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/config.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/ieeefp.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/features.h:
+
+/home/manuel/lib/emscripten/system/include/libc/stddef.h:
+
+/home/manuel/lib/emscripten/system/include/libc/stdarg.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/reent.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/_types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/_types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/_default_types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/lock.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/types.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/types.h:
+
+../gl/stdint.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/sched.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/stdio.h:
+
+/home/manuel/lib/emscripten/system/include/libc/stdlib.h:
+
+/home/manuel/lib/emscripten/system/include/libc/machine/stdlib.h:
+
+../gl/alloca.h:
+
+/home/manuel/lib/emscripten/system/include/libc/string.h:
+
+/home/manuel/lib/emscripten/system/include/libc/sys/string.h:
+
+/home/manuel/lib/emscripten/system/include/libc/assert.h:
+
+/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/gpg-error.h:
+
+tlv.h:
