@@ -1,0 +1,140 @@
+2012-03-27  Werner Koch  <wk@gnupg.org>
+
+	Release 2.0.19.
+
+	Update zh_TW translation.
+
+	Update config.{sub,guess} to version 2012-02-10.
+	* scripts/config.guess, scripts/config.sub: Update.
+
+	Update texinfo source from master.
+	* doc/gpg-agent.texi, doc/gpg.texi, doc/gpgsm.texi
+	* doc/scdaemon.texi,  doc/tools.texi: Update.
+	* doc/yat2m.c: Update.
+
+	Add target to update the texinfo files from master.
+	* doc/Makefile.am (update-source): New.
+
+2012-03-26  Werner Koch  <wk@gnupg.org>
+
+	Fix make rules for audit-events.h et al.
+	* common/Makefile.am (audit-events.h, status-codes.h): Fix target file
+	name.
+
+	Update samplekeys and NEWS.
+	* doc/samplekeys.asc: Update.
+
+	Allow compressed data with algorithm 0.
+	* g10/mainproc.c (proc_compressed): Remove superfluous check for
+	an algorithm number of 0.  This is bug#1326.
+
+2012-02-01  David Shaw  <dshaw@jabberwocky.com>
+
+	Honor --cert-digest-algo when recreating a cert.
+	* g10/sign.c (update_keysig_packet): Honor --cert-digest-algo when
+	  recreating a cert.
+
+	This is used by various things in --edit-key like setpref, primary,
+	etc.  Suggested by Christian Aistleitner.
+
+2012-01-31  Werner Koch  <wk@gnupg.org>
+
+	Update copyright year.
+
+	Require an installed gitlog_to_changelog for make dist.
+	* scripts/gitlog-to-changelog: Remove.
+	* Makefile.am (GITLOG_TO_CHANGELOG): New.
+	(gen-ChangeLog): Use it.  Add set -e.
+
+	Add Ukrainian translation.
+	* po/uk.po: New.
+	* po/LINGUAS: Add uk.po.
+
+	estream: Avoid printing leading zeroes by %p on 32 bit systems.
+	* common/estream-printf.c (pr_pointer): Synchronize definition of
+	AULONG with its use.
+
+	gpg: Add a DECRYPTION_INFO status.
+	* common/status.h (STATUS_DECRYPTION_INFO): New.
+	* g10/encr-data.c: Include status.h.
+	(decrypt_data): Emit STATUS_DECRYPTION_INFO line.
+
+2012-01-20  Werner Koch  <wk@gnupg.org>
+
+	Do not copy default merge commit log entries into the ChangeLog.
+	* scripts/gitlog-to-changelog: Skip merge commits.
+
+	Add files to .gitignore.
+
+2012-01-20  David Shaw  <dshaw@jabberwocky.com>
+
+	Changes to --min-cert-level should cause a trustdb rebuild (issue 1366)
+	* g10/gpgv.c, g10/trustdb.c (read_trust_options): Add min_cert_level
+
+	* g10/trustdb.c (check_trustdb_stale): Request a rebuild if
+	  pending_check_trustdb is true (set when we detect a trustdb
+	  parameter has changed).
+
+	* g10/keylist.c (public_key_list): Use 'l' in the "tru" with-colons
+	  listing for min_cert_level not matching.
+
+	* g10/tdbio.c (tdbio_update_version_record, create_version_record,
+	  tdbio_db_matches_options, tdbio_dump_record, tdbio_read_record,
+	  tdbio_write_record): Add a byte for min_cert_level in the tdbio
+	  version record.
+
+2012-01-11  David Shaw  <dshaw@jabberwocky.com>
+
+	Refresh sample keys.
+
+2012-01-03  Werner Koch  <wk@gnupg.org>
+
+	Terminate csh commands with a semicolon.
+	Fixes bug#1386.
+
+	* agent/gpg-agent.c (main): Terminate csh style output with a semicolon.
+	* scd/scdaemon.c: Ditto.
+
+2011-12-28  David Shaw  <dshaw@jabberwocky.com>
+
+	Use the longest key ID available when talking to a HKP server.
+	This is issue 1340.  Now that PKSD is dead, and SKS supports long key
+	IDs, this is safe to do.  Patch from Daniel Kahn Gillmor
+	<dkg@fifthhorseman.net>.
+
+2011-12-15  David Shaw  <dshaw@jabberwocky.com>
+
+	Merge fix for issue 1331 from 1.4.
+	* photoid.c (generate_photo_id): Check for the JPEG magic numbers
+	instead of JFIF since some programs generate an EXIF header first.
+
+2011-12-02  Werner Koch  <wk@gnupg.org>
+
+	Generate the ChangeLog from commit logs.
+	* scripts/gitlog-to-changelog: New script.  Taken from gnulib.
+	* scripts/git-log-fix: New file.
+	* scripts/git-log-footer: New file.
+	* scripts/git-hooks/commit-msg: New script.
+	* autogen.sh: Install commit-msg hook for git.
+	* doc/HACKING: Describe the ChangeLog policy.
+	* ChangeLog: New file.
+	* Makefile.am (EXTRA_DIST): Add new files.
+	(gen-ChangeLog): New.
+	(dist-hook): Run gen-ChangeLog.
+
+	Rename all ChangeLog files to ChangeLog-2011.
+
+2011-12-01  Werner Koch  <wk@gnupg.org>
+
+	NB: Changes done before December 1st, 2011 are described in
+	per directory files named ChangeLog-2011.  See doc/HACKING for
+	details.
+
+        -----
+	Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009,
+	              2010, 2011 Free Software Foundation, Inc.
+
+	Copying and distribution of this file and/or the original GIT
+	commit log messages, with or without modification, are
+	permitted provided the copyright notice and this notice are
+	preserved.
