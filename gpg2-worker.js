@@ -1,3 +1,4 @@
+_i32______gpg_err_init_to_void_____ = function() {}
 var console = {log: function() {}};
 var is_browser = (typeof(self) !== "undefined" || typeof(window) !== "undefined");
 var FS;
@@ -42,16 +43,16 @@ var getFile = function(id, pseudo_path, pseudo_name) {
     for(var i = 1; i < path.length; i++) {
       if(path[i] != '')
         parentObj = parentObj.contents[path[i]];
-  }
-  var array = parentObj.contents[pseudo_name].contents;
-  var binary_data = new Uint8Array(array);
-  var chunk_size = 1000;
-  var chunk_count = Math.max(1, Math.ceil(binary_data.length/chunk_size));
-  for(var i = 0; i < chunk_count; i++) {
-    var chunk = binary_data.subarray(i*chunk_size, Math.min((i+1)*chunk_size, binary_data.length));
-    var str_chunk = String['fromCharCode'].apply(null, chunk);
-    self.postMessage(JSON.stringify({'id': id, 'chunk_id': i, 'chunk_count': chunk_count, 'contents': str_chunk}));
-  }
+    }
+    var array = parentObj.contents[pseudo_name].contents;
+    var binary_data = new Uint8Array(array);
+    var chunk_size = 1000;
+    var chunk_count = Math.max(1, Math.ceil(binary_data.length/chunk_size));
+    for(var i = 0; i < chunk_count; i++) {
+      var chunk = binary_data.subarray(i*chunk_size, Math.min((i+1)*chunk_size, binary_data.length));
+      var str_chunk = String['fromCharCode'].apply(null, chunk);
+      self.postMessage(JSON.stringify({'id': id, 'chunk_id': i, 'chunk_count': chunk_count, 'contents': str_chunk}));
+    }
   }
   catch(e) {
     self.postMessage(JSON.stringify({'id': id, 'chunk_id': 0, 'chunk_count': 0, 'error': true}));
@@ -6275,4 +6276,3 @@ function _select(nfds, readfds, writefds, exceptfds, timeout) {
       return checkfds(nfds, readfds, canRead)
            + checkfds(nfds, writefds, canWrite);
   }
-_i32______gpg_err_init_to_void_____ = function() {}

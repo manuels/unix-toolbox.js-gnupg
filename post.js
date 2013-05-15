@@ -54,5 +54,3 @@ function _select(nfds, readfds, writefds, exceptfds, timeout) {
            + checkfds(nfds, writefds, canWrite);
   }
 
-_i32______gpg_err_init_to_void_____ = function() {}
-

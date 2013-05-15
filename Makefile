@@ -31,4 +31,4 @@ utils: gpg2 ;
 %:
 	cp ${UTIL_PATH}/$@ ${UTIL_PATH}/$@.bc
 	emcc defmissing.c  -o defmissing.bc
-	emcc -O2 --minify 1 --post-js post.js --pre-js ./toolbox-base/pre.js defmissing.bc ${UTIL_PATH}/$@.bc ${ZLIB} ${LIBASSUAN} ${LIBGCRYPT} ${LIBGPGERROR} -o $@-worker.js
+	emcc -O2 --minify 1 --post-js post.js --pre-js pre.js --pre-js ./toolbox-base/pre.js defmissing.bc ${UTIL_PATH}/$@.bc ${ZLIB} ${LIBASSUAN} ${LIBGCRYPT} ${LIBGPGERROR} -o $@-worker.js
