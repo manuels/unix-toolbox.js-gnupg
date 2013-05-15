@@ -46,7 +46,7 @@
 #include <unistd.h>
 
 #include <sys/socket.h>
-#include <net/netdb.h>
+//#include <net/netdb.h>
 
 #ifdef HAVE_W32_SYSTEM
 # include <windows.h>

@@ -1,18 +1,18 @@
 [submodule "zlib"]
 	path = zlib
-	url = ../zlib
+	url = git://github.com/manuels/unix-toolbox.js-zlib.git
 [submodule "libgpg-error"]
 	path = libgpg-error
-	url = ../libgpg-error
+	url = git://github.com/manuels/unix-toolbox.js-libgpg-error.git
 [submodule "libassuan"]
 	path = libassuan
-	url = ../libassuan/
+	url = git://github.com/manuels/unix-toolbox.js-libassuan.git
 [submodule "libksba"]
 	path = libksba
-	url = ../libksba/
+	url = git://github.com/manuels/unix-toolbox.js-libksba.git
 [submodule "libgcrypt"]
 	path = libgcrypt
-	url = ../libgcrypt
+	url = git://github.com/manuels/unix-toolbox.js-libgcrypt.git
 [submodule "toolbox-base"]
 	path = toolbox-base
-	url = ../../base
+	url = git://github.com/manuels/unix-toolbox.js-base.git

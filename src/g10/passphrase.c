@@ -72,7 +72,7 @@ encode_s2k_iterations (int iterations)
         {
           /* Don't print an error if an older agent is used.  */
           if (err && gpg_err_code (err) != GPG_ERR_ASS_PARAMETER)
-            log_error (_("problem with the agent: %s\n"), gpg_strerror (err));
+            log_info (_("problem with the agent: %s\n"), gpg_strerror (err));
           /* Default to 65536 which we used up to 2.0.13.  */
           return 96; 
         }

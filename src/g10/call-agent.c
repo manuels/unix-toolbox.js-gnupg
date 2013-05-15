@@ -123,14 +123,14 @@ start_agent (int for_card)
     rc = 0;
   else
     {
-      rc = start_new_gpg_agent (&agent_ctx,
+      rc = 0;/*start_new_gpg_agent (&agent_ctx,
                                 GPG_ERR_SOURCE_DEFAULT,
                                 opt.homedir,
                                 opt.agent_program,
                                 opt.lc_ctype, opt.lc_messages,
                                 opt.session_env,
                                 opt.verbose, DBG_ASSUAN,
-                                NULL, NULL);
+                                NULL, NULL);*/
       if (!rc)
         {
           /* Tell the agent that we support Pinentry notifications.

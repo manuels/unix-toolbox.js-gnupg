@@ -396,7 +396,7 @@
 #define HAVE_SYS_TYPES_H 1
 
 /* Define to 1 if you have the `tcgetattr' function. */
-#define HAVE_TCGETATTR 1
+/* #undef HAVE_TCGETATTR */
 
 /* Define to 1 if you have the <termio.h> header file. */
 /* #undef HAVE_TERMIO_H */

@@ -66,7 +66,7 @@ configure:3279: result: i686-pc-linux-gnu
 configure:3303: autobuild project... gnupg
 configure:3305: autobuild revision... 2.0.19
 configure:3309: autobuild hostname... canttouchthis
-configure:3318: autobuild timestamp... 20130505-210032
+configure:3318: autobuild timestamp... 20130505-211530
 configure:3335: checking for style of include used by make
 configure:3363: result: GNU
 configure:3433: checking for gcc
@@ -529,7 +529,7 @@ configure:7770: checking for KSBA - version >= 1.0.7
 configure:7805: result: yes ()
 configure:7913: checking for library containing dlopen
 configure:7944: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-/tmp/conftest-K1TGGX.o: In function `main':
+/tmp/conftest-XnpfSV.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `dlopen'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:7944: $? = 1
@@ -586,7 +586,7 @@ configure: failed program was:
 |   return 0;
 | }
 configure:7944: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c -lc   >&5
-/tmp/conftest-bAht04.o: In function `main':
+/tmp/conftest-sakKfl.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `dlopen'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:7944: $? = 1
@@ -737,7 +737,7 @@ configure:8302: $? = 0
 configure:8302: result: yes
 configure:8428: checking for adns_free
 configure:8428: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-/tmp/conftest-TRnbtG.o: In function `main':
+/tmp/conftest-CqZFkh.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `adns_free'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:8428: $? = 1
@@ -2172,7 +2172,7 @@ configure:13070: $? = 0
 configure:13070: result: yes
 configure:13076: checking for _doprnt
 configure:13076: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-/tmp/conftest-XJJqlu.o: In function `main':
+/tmp/conftest-073SSi.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `_doprnt'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13076: $? = 1
@@ -2628,21 +2628,21 @@ configure:13145: $? = 0
 configure:13155: result: yes
 configure:13176: checking for working vfork
 configure:13286: result: yes
-configure:13314: checking for strerror
-configure:13314: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13315: checking for strerror
+configure:13315: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
 conftest.c:99:6: warning: incompatible redeclaration of library function 'strerror'
 char strerror ();
      ^
 conftest.c:99:6: note: 'strerror' is a builtin with type 'char *(int)'
 1 warning generated.
-configure:13314: $? = 0
-configure:13314: result: yes
-configure:13314: checking for strlwr
-configure:13314: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-/tmp/conftest-DnHujP.o: In function `main':
+configure:13315: $? = 0
+configure:13315: result: yes
+configure:13315: checking for strlwr
+configure:13315: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+/tmp/conftest-ZmpqX7.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `strlwr'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-configure:13314: $? = 1
+configure:13315: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -2758,152 +2758,148 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13314: result: no
-configure:13314: checking for tcgetattr
-configure:13314: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13314: $? = 0
-configure:13314: result: yes
-configure:13314: checking for mmap
-configure:13314: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13314: $? = 0
-configure:13314: result: yes
-configure:13326: checking for strcasecmp
-configure:13326: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-conftest.c:102:6: warning: incompatible redeclaration of library function 'strcasecmp'
+configure:13315: result: no
+configure:13315: checking for mmap
+configure:13315: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13315: $? = 0
+configure:13315: result: yes
+configure:13327: checking for strcasecmp
+configure:13327: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+conftest.c:101:6: warning: incompatible redeclaration of library function 'strcasecmp'
 char strcasecmp ();
      ^
-conftest.c:102:6: note: 'strcasecmp' is a builtin with type 'int (const char *, const char *)'
+conftest.c:101:6: note: 'strcasecmp' is a builtin with type 'int (const char *, const char *)'
 1 warning generated.
-configure:13326: $? = 0
-configure:13326: result: yes
-configure:13326: checking for strncasecmp
-configure:13326: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-conftest.c:103:6: warning: incompatible redeclaration of library function 'strncasecmp'
+configure:13327: $? = 0
+configure:13327: result: yes
+configure:13327: checking for strncasecmp
+configure:13327: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+conftest.c:102:6: warning: incompatible redeclaration of library function 'strncasecmp'
 char strncasecmp ();
      ^
-conftest.c:103:6: note: 'strncasecmp' is a builtin with type 'int (const char *, const char *, unsigned int)'
+conftest.c:102:6: note: 'strncasecmp' is a builtin with type 'int (const char *, const char *, unsigned int)'
 1 warning generated.
-configure:13326: $? = 0
-configure:13326: result: yes
-configure:13326: checking for ctermid
-configure:13326: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13326: $? = 0
-configure:13326: result: yes
-configure:13326: checking for times
-configure:13326: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13326: $? = 0
-configure:13326: result: yes
-configure:13326: checking for gmtime_r
-configure:13326: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13326: $? = 0
-configure:13326: result: yes
-configure:13338: checking for unsetenv
-configure:13338: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13338: $? = 0
-configure:13338: result: yes
-configure:13338: checking for fcntl
-configure:13338: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13338: $? = 0
-configure:13338: result: yes
-configure:13338: checking for ftruncate
-configure:13338: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13338: $? = 0
-configure:13338: result: yes
-configure:13350: checking for gettimeofday
-configure:13350: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13350: $? = 0
-configure:13350: result: yes
-configure:13350: checking for getrusage
-configure:13350: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13350: $? = 0
-configure:13350: result: yes
-configure:13350: checking for getrlimit
-configure:13350: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13350: $? = 0
-configure:13350: result: yes
-configure:13350: checking for setrlimit
-configure:13350: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13350: $? = 0
-configure:13350: result: yes
-configure:13350: checking for clock_gettime
-configure:13350: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13350: $? = 0
-configure:13350: result: yes
-configure:13363: checking for atexit
-configure:13363: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13363: $? = 0
-configure:13363: result: yes
-configure:13363: checking for getpagesize
-configure:13363: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13363: $? = 0
-configure:13363: result: yes
-configure:13363: checking for strftime
-configure:13363: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13363: $? = 0
-configure:13363: result: yes
-configure:13363: checking for nl_langinfo
-configure:13363: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13363: $? = 0
-configure:13363: result: yes
-configure:13363: checking for setlocale
-configure:13363: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13363: $? = 0
-configure:13363: result: yes
-configure:13375: checking for waitpid
-configure:13375: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13375: $? = 0
-configure:13375: result: yes
-configure:13375: checking for wait4
-configure:13375: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13375: $? = 0
-configure:13375: result: yes
-configure:13375: checking for sigaction
-configure:13375: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13375: $? = 0
-configure:13375: result: yes
-configure:13375: checking for sigprocmask
-configure:13375: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13375: $? = 0
-configure:13375: result: yes
-configure:13375: checking for pipe
-configure:13375: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13375: $? = 0
-configure:13375: result: yes
-configure:13375: checking for stat
-configure:13375: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13375: $? = 0
-configure:13375: result: yes
-configure:13375: checking for getaddrinfo
-configure:13375: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13375: $? = 0
-configure:13375: result: yes
-configure:13387: checking for ttyname
-configure:13387: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13387: $? = 0
-configure:13387: result: yes
-configure:13387: checking for rand
-configure:13387: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13387: $? = 0
-configure:13387: result: yes
-configure:13387: checking for ftello
-configure:13387: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13387: $? = 0
-configure:13387: result: yes
-configure:13387: checking for fsync
-configure:13387: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13387: $? = 0
-configure:13387: result: yes
-configure:13387: checking for stat
-configure:13387: result: yes
-configure:13397: checking for struct sigaction
-configure:13397: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:13397: $? = 0
-configure:13397: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-conftest.c:114:31: error: expected expression
+configure:13327: $? = 0
+configure:13327: result: yes
+configure:13327: checking for ctermid
+configure:13327: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13327: $? = 0
+configure:13327: result: yes
+configure:13327: checking for times
+configure:13327: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13327: $? = 0
+configure:13327: result: yes
+configure:13327: checking for gmtime_r
+configure:13327: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13327: $? = 0
+configure:13327: result: yes
+configure:13339: checking for unsetenv
+configure:13339: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13339: $? = 0
+configure:13339: result: yes
+configure:13339: checking for fcntl
+configure:13339: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13339: $? = 0
+configure:13339: result: yes
+configure:13339: checking for ftruncate
+configure:13339: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13339: $? = 0
+configure:13339: result: yes
+configure:13351: checking for gettimeofday
+configure:13351: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13351: $? = 0
+configure:13351: result: yes
+configure:13351: checking for getrusage
+configure:13351: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13351: $? = 0
+configure:13351: result: yes
+configure:13351: checking for getrlimit
+configure:13351: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13351: $? = 0
+configure:13351: result: yes
+configure:13351: checking for setrlimit
+configure:13351: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13351: $? = 0
+configure:13351: result: yes
+configure:13351: checking for clock_gettime
+configure:13351: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13351: $? = 0
+configure:13351: result: yes
+configure:13364: checking for atexit
+configure:13364: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13364: $? = 0
+configure:13364: result: yes
+configure:13364: checking for getpagesize
+configure:13364: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13364: $? = 0
+configure:13364: result: yes
+configure:13364: checking for strftime
+configure:13364: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13364: $? = 0
+configure:13364: result: yes
+configure:13364: checking for nl_langinfo
+configure:13364: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13364: $? = 0
+configure:13364: result: yes
+configure:13364: checking for setlocale
+configure:13364: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13364: $? = 0
+configure:13364: result: yes
+configure:13376: checking for waitpid
+configure:13376: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13376: $? = 0
+configure:13376: result: yes
+configure:13376: checking for wait4
+configure:13376: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13376: $? = 0
+configure:13376: result: yes
+configure:13376: checking for sigaction
+configure:13376: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13376: $? = 0
+configure:13376: result: yes
+configure:13376: checking for sigprocmask
+configure:13376: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13376: $? = 0
+configure:13376: result: yes
+configure:13376: checking for pipe
+configure:13376: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13376: $? = 0
+configure:13376: result: yes
+configure:13376: checking for stat
+configure:13376: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13376: $? = 0
+configure:13376: result: yes
+configure:13376: checking for getaddrinfo
+configure:13376: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13376: $? = 0
+configure:13376: result: yes
+configure:13388: checking for ttyname
+configure:13388: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13388: $? = 0
+configure:13388: result: yes
+configure:13388: checking for rand
+configure:13388: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13388: $? = 0
+configure:13388: result: yes
+configure:13388: checking for ftello
+configure:13388: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13388: $? = 0
+configure:13388: result: yes
+configure:13388: checking for fsync
+configure:13388: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13388: $? = 0
+configure:13388: result: yes
+configure:13388: checking for stat
+configure:13388: result: yes
+configure:13398: checking for struct sigaction
+configure:13398: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:13398: $? = 0
+configure:13398: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+conftest.c:113:31: error: expected expression
 if (sizeof ((struct sigaction)))
                               ^
 1 error generated.
-configure:13397: $? = 1
+configure:13398: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -2980,7 +2976,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -3023,16 +3018,16 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13397: result: yes
-configure:13407: checking for sigset_t
-configure:13407: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:13407: $? = 0
-configure:13407: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-conftest.c:115:23: error: expected expression
+configure:13398: result: yes
+configure:13408: checking for sigset_t
+configure:13408: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:13408: $? = 0
+configure:13408: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+conftest.c:114:23: error: expected expression
 if (sizeof ((sigset_t)))
                       ^
 1 error generated.
-configure:13407: $? = 1
+configure:13408: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -3109,7 +3104,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -3153,13 +3147,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13407: result: yes
-configure:13426: checking for memicmp
-configure:13426: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-/tmp/conftest-o4Ya4E.o: In function `main':
+configure:13408: result: yes
+configure:13427: checking for memicmp
+configure:13427: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+/tmp/conftest-xbzBLp.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `memicmp'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-configure:13426: $? = 1
+configure:13427: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -3236,7 +3230,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -3309,37 +3302,37 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13426: result: no
-configure:13426: checking for stpcpy
-configure:13426: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-conftest.c:134:6: warning: incompatible redeclaration of library function 'stpcpy'
+configure:13427: result: no
+configure:13427: checking for stpcpy
+configure:13427: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+conftest.c:133:6: warning: incompatible redeclaration of library function 'stpcpy'
 char stpcpy ();
      ^
-conftest.c:134:6: note: 'stpcpy' is a builtin with type 'char *(char *, const char *)'
+conftest.c:133:6: note: 'stpcpy' is a builtin with type 'char *(char *, const char *)'
 1 warning generated.
-configure:13426: $? = 0
-configure:13426: result: yes
-configure:13426: checking for strlwr
-configure:13426: result: no
-configure:13426: checking for strtoul
-configure:13426: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13426: $? = 0
-configure:13426: result: yes
-configure:13426: checking for memmove
-configure:13426: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-conftest.c:136:6: warning: incompatible redeclaration of library function 'memmove'
+configure:13427: $? = 0
+configure:13427: result: yes
+configure:13427: checking for strlwr
+configure:13427: result: no
+configure:13427: checking for strtoul
+configure:13427: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13427: $? = 0
+configure:13427: result: yes
+configure:13427: checking for memmove
+configure:13427: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+conftest.c:135:6: warning: incompatible redeclaration of library function 'memmove'
 char memmove ();
      ^
-conftest.c:136:6: note: 'memmove' is a builtin with type 'void *(void *, const void *, unsigned int)'
+conftest.c:135:6: note: 'memmove' is a builtin with type 'void *(void *, const void *, unsigned int)'
 1 warning generated.
-configure:13426: $? = 0
-configure:13426: result: yes
-configure:13426: checking for stricmp
-configure:13426: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-/tmp/conftest-9FIAmT.o: In function `main':
+configure:13427: $? = 0
+configure:13427: result: yes
+configure:13427: checking for stricmp
+configure:13427: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+/tmp/conftest-isj03O.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `stricmp'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-configure:13426: $? = 1
+configure:13427: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -3416,7 +3409,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -3492,41 +3484,41 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13426: result: no
-configure:13426: checking for strtol
-configure:13426: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13426: $? = 0
-configure:13426: result: yes
-configure:13439: checking for isascii
-configure:13439: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13439: $? = 0
-configure:13439: result: yes
-configure:13439: checking for timegm
-configure:13439: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13439: $? = 0
-configure:13439: result: yes
-configure:13439: checking for getrusage
-configure:13439: result: yes
-configure:13439: checking for setrlimit
-configure:13439: result: yes
-configure:13439: checking for stat
-configure:13439: result: yes
-configure:13439: checking for setlocale
-configure:13439: result: yes
-configure:13452: checking for flockfile
-configure:13452: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13452: $? = 0
-configure:13452: result: yes
-configure:13452: checking for funlockfile
-configure:13452: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13452: $? = 0
-configure:13452: result: yes
-configure:13452: checking for funopen
-configure:13452: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-/tmp/conftest-iANzIF.o: In function `main':
+configure:13427: result: no
+configure:13427: checking for strtol
+configure:13427: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13427: $? = 0
+configure:13427: result: yes
+configure:13440: checking for isascii
+configure:13440: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13440: $? = 0
+configure:13440: result: yes
+configure:13440: checking for timegm
+configure:13440: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13440: $? = 0
+configure:13440: result: yes
+configure:13440: checking for getrusage
+configure:13440: result: yes
+configure:13440: checking for setrlimit
+configure:13440: result: yes
+configure:13440: checking for stat
+configure:13440: result: yes
+configure:13440: checking for setlocale
+configure:13440: result: yes
+configure:13453: checking for flockfile
+configure:13453: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13453: $? = 0
+configure:13453: result: yes
+configure:13453: checking for funlockfile
+configure:13453: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13453: $? = 0
+configure:13453: result: yes
+configure:13453: checking for funopen
+configure:13453: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+/tmp/conftest-1lt1d0.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `funopen'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-configure:13452: $? = 1
+configure:13453: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -3603,7 +3595,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -3688,76 +3679,76 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13452: result: no
-configure:13452: checking for getpwnam
-configure:13452: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13452: $? = 0
-configure:13452: result: yes
-configure:13452: checking for getpwuid
-configure:13452: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13452: $? = 0
-configure:13452: result: yes
-configure:13470: checking for working alloca.h
-configure:13487: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13487: $? = 0
-configure:13495: result: yes
-configure:13503: checking for alloca
-configure:13540: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13540: $? = 0
-configure:13548: result: yes
-configure:13660: checking for stdlib.h
-configure:13660: result: yes
-configure:13670: checking for GNU libc compatible malloc
-configure:13694: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13694: $? = 0
-configure:13694: ./conftest
-configure:13694: $? = 0
-configure:13704: result: yes
-configure:13719: checking for long long int
-configure:13759: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13759: $? = 0
-configure:13789: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13789: $? = 0
-configure:13789: ./conftest
-configure:13789: $? = 0
-configure:13804: result: yes
-configure:13813: checking for long double
-configure:13845: result: yes
-configure:13853: checking whether stat file-mode macros are broken
-configure:13880: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:13880: $? = 0
-configure:13887: result: no
-configure:13900: checking for unsigned long long int
-configure:13940: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:13940: $? = 0
-configure:13948: result: yes
-configure:14019: checking for mkdtemp
-configure:14019: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:14019: $? = 0
-configure:14019: result: yes
-configure:14064: checking for setenv
-configure:14064: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:14064: $? = 0
-configure:14064: result: yes
-configure:14077: checking for unsetenv
-configure:14077: result: yes
-configure:14197: checking for unsetenv() return type
-configure:14223: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14223: $? = 0
-configure:14230: result: int
-configure:14242: checking for stdint.h
-configure:14242: result: yes
-configure:14252: checking for SIZE_MAX
-configure:14326: result: yes
-configure:14376: checking absolute name of <stdint.h>
-configure:14391: result: ///home/manuel/lib/emscripten/system/include/libc/stdint.h
-configure:14408: checking whether stdint.h conforms to C99
-configure:14540: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-conftest.c:220:20: error: use of undeclared identifier 'WCHAR_MIN'
+configure:13453: result: no
+configure:13453: checking for getpwnam
+configure:13453: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13453: $? = 0
+configure:13453: result: yes
+configure:13453: checking for getpwuid
+configure:13453: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13453: $? = 0
+configure:13453: result: yes
+configure:13471: checking for working alloca.h
+configure:13488: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13488: $? = 0
+configure:13496: result: yes
+configure:13504: checking for alloca
+configure:13541: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13541: $? = 0
+configure:13549: result: yes
+configure:13661: checking for stdlib.h
+configure:13661: result: yes
+configure:13671: checking for GNU libc compatible malloc
+configure:13695: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13695: $? = 0
+configure:13695: ./conftest
+configure:13695: $? = 0
+configure:13705: result: yes
+configure:13720: checking for long long int
+configure:13760: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13760: $? = 0
+configure:13790: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13790: $? = 0
+configure:13790: ./conftest
+configure:13790: $? = 0
+configure:13805: result: yes
+configure:13814: checking for long double
+configure:13846: result: yes
+configure:13854: checking whether stat file-mode macros are broken
+configure:13881: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:13881: $? = 0
+configure:13888: result: no
+configure:13901: checking for unsigned long long int
+configure:13941: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:13941: $? = 0
+configure:13949: result: yes
+configure:14020: checking for mkdtemp
+configure:14020: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:14020: $? = 0
+configure:14020: result: yes
+configure:14065: checking for setenv
+configure:14065: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:14065: $? = 0
+configure:14065: result: yes
+configure:14078: checking for unsetenv
+configure:14078: result: yes
+configure:14198: checking for unsetenv() return type
+configure:14224: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14224: $? = 0
+configure:14231: result: int
+configure:14243: checking for stdint.h
+configure:14243: result: yes
+configure:14253: checking for SIZE_MAX
+configure:14327: result: yes
+configure:14377: checking absolute name of <stdint.h>
+configure:14392: result: ///home/manuel/lib/emscripten/system/include/libc/stdint.h
+configure:14409: checking whether stdint.h conforms to C99
+configure:14541: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+conftest.c:219:20: error: use of undeclared identifier 'WCHAR_MIN'
   int check_WCHAR: WCHAR_MIN <= 0 && 0 < WCHAR_MAX ? 1 : -1;
                    ^
 1 error generated.
-configure:14540: $? = 1
+configure:14541: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -3834,7 +3825,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -4020,14 +4010,14 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:14545: result: no
-configure:14553: checking sys/inttypes.h usability
-configure:14553: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-conftest.c:172:10: fatal error: 'sys/inttypes.h' file not found
+configure:14546: result: no
+configure:14554: checking sys/inttypes.h usability
+configure:14554: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+conftest.c:171:10: fatal error: 'sys/inttypes.h' file not found
 #include <sys/inttypes.h>
          ^
 1 error generated.
-configure:14553: $? = 1
+configure:14554: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -4104,7 +4094,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -4201,14 +4190,14 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <sys/inttypes.h>
-configure:14553: result: no
-configure:14553: checking sys/inttypes.h presence
-configure:14553: /home/manuel/lib/emscripten/emcc -E -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c
-conftest.c:139:10: fatal error: 'sys/inttypes.h' file not found
+configure:14554: result: no
+configure:14554: checking sys/inttypes.h presence
+configure:14554: /home/manuel/lib/emscripten/emcc -E -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c
+conftest.c:138:10: fatal error: 'sys/inttypes.h' file not found
 #include <sys/inttypes.h>
          ^
 1 error generated.
-configure:14553: $? = 1
+configure:14554: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -4285,7 +4274,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -4349,64 +4337,64 @@ configure: failed program was:
 | #define ABSOLUTE_STDINT_H "///home/manuel/lib/emscripten/system/include/libc/stdint.h"
 | /* end confdefs.h.  */
 | #include <sys/inttypes.h>
-configure:14553: result: no
-configure:14553: checking for sys/inttypes.h
-configure:14553: result: no
-configure:14553: checking sys/bitypes.h usability
-configure:14553: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14553: $? = 0
-configure:14553: result: yes
-configure:14553: checking sys/bitypes.h presence
-configure:14553: /home/manuel/lib/emscripten/emcc -E -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c
-configure:14553: $? = 0
-configure:14553: result: yes
-configure:14553: checking for sys/bitypes.h
-configure:14553: result: yes
-configure:14580: checking for bit size of ptrdiff_t
-configure:14585: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:14585: $? = 0
-configure:14585: ./conftest
-configure:14585: $? = 0
-configure:14607: result: 32
-configure:14580: checking for bit size of sig_atomic_t
-configure:14585: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:14585: $? = 0
-configure:14585: ./conftest
-configure:14585: $? = 0
-configure:14607: result: 32
-configure:14580: checking for bit size of size_t
-configure:14585: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:14585: $? = 0
-configure:14585: ./conftest
-configure:14585: $? = 0
-configure:14607: result: 32
-configure:14580: checking for bit size of wchar_t
-configure:14585: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:14585: $? = 0
-configure:14585: ./conftest
-configure:14585: $? = 0
-configure:14607: result: 32
-configure:14580: checking for bit size of wint_t
-configure:14585: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-configure:14585: $? = 0
-configure:14585: ./conftest
-configure:14585: $? = 0
-configure:14607: result: 32
-configure:14625: checking whether sig_atomic_t is signed
-configure:14652: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14652: $? = 0
-configure:14662: result: yes
-configure:14625: checking whether wchar_t is signed
-configure:14652: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14652: $? = 0
-configure:14662: result: yes
-configure:14625: checking whether wint_t is signed
-configure:14652: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-conftest.c:158:24: error: 'verify' declared as an array with a negative size
+configure:14554: result: no
+configure:14554: checking for sys/inttypes.h
+configure:14554: result: no
+configure:14554: checking sys/bitypes.h usability
+configure:14554: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14554: $? = 0
+configure:14554: result: yes
+configure:14554: checking sys/bitypes.h presence
+configure:14554: /home/manuel/lib/emscripten/emcc -E -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c
+configure:14554: $? = 0
+configure:14554: result: yes
+configure:14554: checking for sys/bitypes.h
+configure:14554: result: yes
+configure:14581: checking for bit size of ptrdiff_t
+configure:14586: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:14586: $? = 0
+configure:14586: ./conftest
+configure:14586: $? = 0
+configure:14608: result: 32
+configure:14581: checking for bit size of sig_atomic_t
+configure:14586: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:14586: $? = 0
+configure:14586: ./conftest
+configure:14586: $? = 0
+configure:14608: result: 32
+configure:14581: checking for bit size of size_t
+configure:14586: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:14586: $? = 0
+configure:14586: ./conftest
+configure:14586: $? = 0
+configure:14608: result: 32
+configure:14581: checking for bit size of wchar_t
+configure:14586: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:14586: $? = 0
+configure:14586: ./conftest
+configure:14586: $? = 0
+configure:14608: result: 32
+configure:14581: checking for bit size of wint_t
+configure:14586: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+configure:14586: $? = 0
+configure:14586: ./conftest
+configure:14586: $? = 0
+configure:14608: result: 32
+configure:14626: checking whether sig_atomic_t is signed
+configure:14653: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14653: $? = 0
+configure:14663: result: yes
+configure:14626: checking whether wchar_t is signed
+configure:14653: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14653: $? = 0
+configure:14663: result: yes
+configure:14626: checking whether wint_t is signed
+configure:14653: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+conftest.c:157:24: error: 'verify' declared as an array with a negative size
             int verify[2 * ((wint_t) -1 < (wint_t) 0) - 1];
                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1 error generated.
-configure:14652: $? = 1
+configure:14653: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -4483,7 +4471,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -4573,51 +4560,51 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:14662: result: no
-configure:14683: checking for ptrdiff_t integer literal suffix
-configure:14729: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14729: $? = 0
-configure:14738: result: 
-configure:14683: checking for sig_atomic_t integer literal suffix
-configure:14729: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14729: $? = 0
-configure:14738: result: 
-configure:14683: checking for size_t integer literal suffix
-configure:14729: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14729: $? = 0
-configure:14738: result: u
-configure:14683: checking for wchar_t integer literal suffix
-configure:14729: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14729: $? = 0
-configure:14738: result: 
-configure:14683: checking for wint_t integer literal suffix
-configure:14729: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14729: $? = 0
-configure:14738: result: u
-configure:14757: checking for strpbrk
-configure:14757: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
-conftest.c:175:6: warning: incompatible redeclaration of library function 'strpbrk'
+configure:14663: result: no
+configure:14684: checking for ptrdiff_t integer literal suffix
+configure:14730: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14730: $? = 0
+configure:14739: result: 
+configure:14684: checking for sig_atomic_t integer literal suffix
+configure:14730: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14730: $? = 0
+configure:14739: result: 
+configure:14684: checking for size_t integer literal suffix
+configure:14730: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14730: $? = 0
+configure:14739: result: u
+configure:14684: checking for wchar_t integer literal suffix
+configure:14730: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14730: $? = 0
+configure:14739: result: 
+configure:14684: checking for wint_t integer literal suffix
+configure:14730: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14730: $? = 0
+configure:14739: result: u
+configure:14758: checking for strpbrk
+configure:14758: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/  conftest.c  >&5
+conftest.c:174:6: warning: incompatible redeclaration of library function 'strpbrk'
 char strpbrk ();
      ^
-conftest.c:175:6: note: 'strpbrk' is a builtin with type 'char *(const char *, const char *)'
+conftest.c:174:6: note: 'strpbrk' is a builtin with type 'char *(const char *, const char *)'
 1 warning generated.
-configure:14757: $? = 0
-configure:14757: result: yes
-configure:14778: checking for unistd.h
-configure:14778: result: yes
-configure:14801: checking for stdint.h
-configure:14801: result: yes
-configure:14825: checking for sys/stat.h
-configure:14825: result: yes
-configure:14825: checking for unistd.h
-configure:14825: result: yes
-configure:14825: checking direct.h usability
-configure:14825: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-conftest.c:190:10: fatal error: 'direct.h' file not found
+configure:14758: $? = 0
+configure:14758: result: yes
+configure:14779: checking for unistd.h
+configure:14779: result: yes
+configure:14802: checking for stdint.h
+configure:14802: result: yes
+configure:14826: checking for sys/stat.h
+configure:14826: result: yes
+configure:14826: checking for unistd.h
+configure:14826: result: yes
+configure:14826: checking direct.h usability
+configure:14826: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+conftest.c:189:10: fatal error: 'direct.h' file not found
 #include <direct.h>
          ^
 1 error generated.
-configure:14825: $? = 1
+configure:14826: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -4694,7 +4681,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -4809,14 +4795,14 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <direct.h>
-configure:14825: result: no
-configure:14825: checking direct.h presence
-configure:14825: /home/manuel/lib/emscripten/emcc -E -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c
-conftest.c:157:10: fatal error: 'direct.h' file not found
+configure:14826: result: no
+configure:14826: checking direct.h presence
+configure:14826: /home/manuel/lib/emscripten/emcc -E -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c
+conftest.c:156:10: fatal error: 'direct.h' file not found
 #include <direct.h>
          ^
 1 error generated.
-configure:14825: $? = 1
+configure:14826: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -4893,7 +4879,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -4975,54 +4960,54 @@ configure: failed program was:
 | #define HAVE_UNISTD_H 1
 | /* end confdefs.h.  */
 | #include <direct.h>
-configure:14825: result: no
-configure:14825: checking for direct.h
-configure:14825: result: no
-configure:14835: checking if mkdir takes one argument
-configure:14861: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
-configure:14861: $? = 0
-configure:14868: result: no
-configure:14880: checking whether regular expression support is requested
-configure:14889: result: no
-configure:15055: checking zlib.h usability
-configure:15055: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-configure:15055: $? = 0
-configure:15055: result: yes
-configure:15055: checking zlib.h presence
-configure:15055: /home/manuel/lib/emscripten/emcc -E -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c
-configure:15055: $? = 0
-configure:15055: result: yes
-configure:15055: checking for zlib.h
-configure:15055: result: yes
-configure:15057: checking for deflateInit2_ in -lz
-configure:15082: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include  -L../zlib/src//lib conftest.c -lz   >&5
-configure:15082: $? = 0
-configure:15091: result: yes
-configure:15338: checking for cc features
-configure:15405: checking if gcc supports -Wno-pointer-sign
-configure:15420: /home/manuel/lib/emscripten/emcc -c -Wno-pointer-sign -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-configure:15420: $? = 0
-configure:15426: result: yes
-configure:15433: checking if gcc supports -Wpointer-arith
-configure:15448: /home/manuel/lib/emscripten/emcc -c -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-configure:15448: $? = 0
-configure:15454: result: yes
-configure:15479: checking system features for estream-printf
-configure:15483: checking for stdint.h
-configure:15483: result: yes
-configure:15494: checking for long long int
-configure:15579: result: yes
-configure:15588: checking for long double
-configure:15620: result: yes
-configure:15630: checking for intmax_t
-configure:15630: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-configure:15630: $? = 0
-configure:15630: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-conftest.c:197:23: error: expected expression
+configure:14826: result: no
+configure:14826: checking for direct.h
+configure:14826: result: no
+configure:14836: checking if mkdir takes one argument
+configure:14862: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ conftest.c >&5
+configure:14862: $? = 0
+configure:14869: result: no
+configure:14881: checking whether regular expression support is requested
+configure:14890: result: no
+configure:15056: checking zlib.h usability
+configure:15056: /home/manuel/lib/emscripten/emcc -c  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+configure:15056: $? = 0
+configure:15056: result: yes
+configure:15056: checking zlib.h presence
+configure:15056: /home/manuel/lib/emscripten/emcc -E -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c
+configure:15056: $? = 0
+configure:15056: result: yes
+configure:15056: checking for zlib.h
+configure:15056: result: yes
+configure:15058: checking for deflateInit2_ in -lz
+configure:15083: /home/manuel/lib/emscripten/emcc -o conftest  -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include  -L../zlib/src//lib conftest.c -lz   >&5
+configure:15083: $? = 0
+configure:15092: result: yes
+configure:15339: checking for cc features
+configure:15406: checking if gcc supports -Wno-pointer-sign
+configure:15421: /home/manuel/lib/emscripten/emcc -c -Wno-pointer-sign -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+configure:15421: $? = 0
+configure:15427: result: yes
+configure:15434: checking if gcc supports -Wpointer-arith
+configure:15449: /home/manuel/lib/emscripten/emcc -c -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+configure:15449: $? = 0
+configure:15455: result: yes
+configure:15480: checking system features for estream-printf
+configure:15484: checking for stdint.h
+configure:15484: result: yes
+configure:15495: checking for long long int
+configure:15580: result: yes
+configure:15589: checking for long double
+configure:15621: result: yes
+configure:15631: checking for intmax_t
+configure:15631: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+configure:15631: $? = 0
+configure:15631: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+conftest.c:196:23: error: expected expression
 if (sizeof ((intmax_t)))
                       ^
 1 error generated.
-configure:15630: $? = 1
+configure:15631: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -5099,7 +5084,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -5225,16 +5209,16 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15630: result: yes
-configure:15649: checking for uintmax_t
-configure:15649: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-configure:15649: $? = 0
-configure:15649: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-conftest.c:198:24: error: expected expression
+configure:15631: result: yes
+configure:15650: checking for uintmax_t
+configure:15650: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+configure:15650: $? = 0
+configure:15650: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+conftest.c:197:24: error: expected expression
 if (sizeof ((uintmax_t)))
                        ^
 1 error generated.
-configure:15649: $? = 1
+configure:15650: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -5311,7 +5295,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -5438,16 +5421,16 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15649: result: yes
-configure:15666: checking for ptrdiff_t
-configure:15666: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-configure:15666: $? = 0
-configure:15666: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
-conftest.c:199:24: error: expected expression
+configure:15650: result: yes
+configure:15667: checking for ptrdiff_t
+configure:15667: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+configure:15667: $? = 0
+configure:15667: /home/manuel/lib/emscripten/emcc -c  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include conftest.c >&5
+conftest.c:198:24: error: expected expression
 if (sizeof ((ptrdiff_t)))
                        ^
 1 error generated.
-configure:15666: $? = 1
+configure:15667: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -5524,7 +5507,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -5652,22 +5634,22 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15666: result: yes
-configure:15680: checking size of unsigned long
-configure:15699: result: 4
-configure:15713: checking size of void *
-configure:15718: /home/manuel/lib/emscripten/emcc -o conftest  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include  -L../zlib/src//lib conftest.c  >&5
-configure:15718: $? = 0
-configure:15718: ./conftest
-configure:15718: $? = 0
-configure:15732: result: 4
-configure:15742: checking for nl_langinfo and THOUSANDS_SEP
-configure:15758: /home/manuel/lib/emscripten/emcc -o conftest  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include  -L../zlib/src//lib conftest.c  >&5
-conftest.c:170:24: error: use of undeclared identifier 'THOUSANDS_SEP'
+configure:15667: result: yes
+configure:15681: checking size of unsigned long
+configure:15700: result: 4
+configure:15714: checking size of void *
+configure:15719: /home/manuel/lib/emscripten/emcc -o conftest  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include  -L../zlib/src//lib conftest.c  >&5
+configure:15719: $? = 0
+configure:15719: ./conftest
+configure:15719: $? = 0
+configure:15733: result: 4
+configure:15743: checking for nl_langinfo and THOUSANDS_SEP
+configure:15759: /home/manuel/lib/emscripten/emcc -o conftest  -Wall -Wno-pointer-sign -Wpointer-arith -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgcrypt/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libgpg-error/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libassuan/src/src/ -I/home/manuel/Projekte/unix-toolbox.js/modules/gnupg/src/../../libksba/src/src/ -I../zlib/src//include  -L../zlib/src//lib conftest.c  >&5
+conftest.c:169:24: error: use of undeclared identifier 'THOUSANDS_SEP'
 char* cs = nl_langinfo(THOUSANDS_SEP); return !cs;
                        ^
 1 error generated.
-configure:15758: $? = 1
+configure:15759: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "gnupg"
@@ -5744,7 +5726,6 @@ configure: failed program was:
 | #define HAVE_WORKING_VFORK 1
 | #define HAVE_WORKING_FORK 1
 | #define HAVE_STRERROR 1
-| #define HAVE_TCGETATTR 1
 | #define HAVE_MMAP 1
 | #define HAVE_STRCASECMP 1
 | #define HAVE_STRNCASECMP 1
@@ -5842,9 +5823,9 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15767: result: no
-configure:15777: checking system features for estream
-configure:16258: creating ./config.status
+configure:15768: result: no
+configure:15778: checking system features for estream
+configure:16259: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -5861,32 +5842,32 @@ generated by GNU Autoconf 2.68.  Invocation command line was
 
 on canttouchthis
 
-config.status:1194: creating m4/Makefile
-config.status:1194: creating Makefile
-config.status:1194: creating po/Makefile.in
-config.status:1194: creating gl/Makefile
-config.status:1194: creating include/Makefile
-config.status:1194: creating jnlib/Makefile
-config.status:1194: creating common/Makefile
-config.status:1194: creating kbx/Makefile
-config.status:1194: creating g10/Makefile
-config.status:1194: creating sm/Makefile
-config.status:1194: creating agent/Makefile
-config.status:1194: creating scd/Makefile
-config.status:1194: creating keyserver/Makefile
-config.status:1194: creating keyserver/gpg2keys_mailto
-config.status:1194: creating keyserver/gpg2keys_test
-config.status:1194: creating tools/gpg-zip
-config.status:1194: creating tools/Makefile
-config.status:1194: creating doc/Makefile
-config.status:1194: creating tests/Makefile
-config.status:1194: creating tests/openpgp/Makefile
-config.status:1194: creating tests/pkits/Makefile
-config.status:1194: creating config.h
-config.status:1375: config.h is unchanged
-config.status:1423: executing depfiles commands
-config.status:1423: executing po-directories commands
-configure:17725: WARNING: unrecognized options: --without-pth, --without-libiconv, --without-libintl
+config.status:1193: creating m4/Makefile
+config.status:1193: creating Makefile
+config.status:1193: creating po/Makefile.in
+config.status:1193: creating gl/Makefile
+config.status:1193: creating include/Makefile
+config.status:1193: creating jnlib/Makefile
+config.status:1193: creating common/Makefile
+config.status:1193: creating kbx/Makefile
+config.status:1193: creating g10/Makefile
+config.status:1193: creating sm/Makefile
+config.status:1193: creating agent/Makefile
+config.status:1193: creating scd/Makefile
+config.status:1193: creating keyserver/Makefile
+config.status:1193: creating keyserver/gpg2keys_mailto
+config.status:1193: creating keyserver/gpg2keys_test
+config.status:1193: creating tools/gpg-zip
+config.status:1193: creating tools/Makefile
+config.status:1193: creating doc/Makefile
+config.status:1193: creating tests/Makefile
+config.status:1193: creating tests/openpgp/Makefile
+config.status:1193: creating tests/pkits/Makefile
+config.status:1193: creating config.h
+config.status:1374: config.h is unchanged
+config.status:1422: executing depfiles commands
+config.status:1422: executing po-directories commands
+configure:17726: WARNING: unrecognized options: --without-pth, --without-libiconv, --without-libintl
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -5968,7 +5949,6 @@ ac_cv_func_strncasecmp=yes
 ac_cv_func_strpbrk=yes
 ac_cv_func_strtol=yes
 ac_cv_func_strtoul=yes
-ac_cv_func_tcgetattr=yes
 ac_cv_func_timegm=yes
 ac_cv_func_times=yes
 ac_cv_func_ttyname=yes
@@ -6443,7 +6423,6 @@ target_alias=''
 #define HAVE_WORKING_VFORK 1
 #define HAVE_WORKING_FORK 1
 #define HAVE_STRERROR 1
-#define HAVE_TCGETATTR 1
 #define HAVE_MMAP 1
 #define HAVE_STRCASECMP 1
 #define HAVE_STRNCASECMP 1

@@ -31,7 +31,6 @@ libcommon_a-http.o: http.c ../config.h \
   /home/manuel/lib/emscripten/system/include/netdb.h \
   /home/manuel/lib/emscripten/system/include/sys/select.h \
   /home/manuel/lib/emscripten/system/include/sys/uio.h \
-  /home/manuel/lib/emscripten/system/include/net/netdb.h \
   /home/manuel/lib/emscripten/system/include/libc/sys/time.h \
   /home/manuel/lib/emscripten/system/include/libc/time.h \
   /home/manuel/lib/emscripten/system/include/libc/machine/time.h \
@@ -115,8 +114,6 @@ libcommon_a-http.o: http.c ../config.h \
 /home/manuel/lib/emscripten/system/include/sys/select.h:
 
 /home/manuel/lib/emscripten/system/include/sys/uio.h:
-
-/home/manuel/lib/emscripten/system/include/net/netdb.h:
 
 /home/manuel/lib/emscripten/system/include/libc/sys/time.h:
 

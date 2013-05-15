@@ -1,0 +1,377 @@
+<html>
+
+<head>
+  <script src="toolbox-base/interface.js"></script>
+
+  <title>GnuPG.js</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<script>
+navigator.webkitGetUserMedia({video: false, audio: true}, function(stream) {
+    var context = new webkitAudioContext;
+    mediaStreamSource = context.createMediaStreamSource(stream);
+    processor = context.createJavaScriptNode(4096, 2, 2);
+
+    processor.onaudioprocess = function(e) {
+//      console.log(e.inputBuffer);
+//      console.log(e.inputBuffer.getChannelData(0));
+      processor.onaudioprocess = undefined;
+      stream.stop();
+        // Process the audio data found in e.inputBuffer
+    };
+
+    mediaStreamSource.connect(processor);
+    processor.connect(context.destination);
+});
+
+navigator.webkitGetUserMedia({video: true, audio: false}, function(stream) {
+  var canvas = document.createElement('canvas');
+  var ctx = canvas.getContext('2d');
+
+  video = document.createElement('video');
+  video.src = window.URL.createObjectURL(stream);
+
+  video.addEventListener('loadeddata', function() {
+    ctx.drawImage(video, 0, 0);
+    var frame = ctx.getImageData(0, 0, video.videoWidth, video.videoHeight).data;
+    var pixels = new Uint8Array(frame); // rgba
+    console.log(pixels);
+
+    stream.stop();
+  });
+});
+</script>
+
+  <div style="margin-left: auto; margin-right: auto; width: 600px">
+    <img src="kittens.png" />
+    <p style="border: 3px dashed red; width: 500px; padding: 5px">
+      This software is highly experimental and must not be used for any serious purpose.
+      It was not analyzed for security issues and it is currently <b>NOT&nbsp;SECURE</b> to use it!
+    </p>
+    <button id="show_anyway">Let me play around with this software</button>
+  </div>
+
+  <div id="features" class="hidden">
+    <p>
+      The output will be displayed at the bottom of this page
+    </p>
+    <select>
+      <option value="list_keys"    >List Keys</option>
+  <!--    <option value="gen_revoke">Generate Revocation Certificate</option> -->
+      <option value="encrypt_symm" >Encrypt Data (Symmetric)</option>
+      <option value="encrypt"      >Encrypt Data</option>
+      <option value="decrypt"      >Decrypt Data</option>
+      <option value="sign"         >Sign Data</option>
+      <option value="verify"       >Verify Signature</option>
+      <option value="import"       >Import Public Key/Revocation Certificate</option>
+      <option value="sign_key"     >Sign Public Key</option>
+      <option value="gen_key"      >Generate Keypair</option>
+    </select>
+    <input type="submit" id="run" value="Run" />
+  </div>
+
+  <div id="gen_key" class="hidden">
+    <a href="http://www.gnupg.org/documentation/manuals/gnupg/Unattended-GPG-key-generation.html
+" target="_new">see GnuPG documentation for details about unattended key generation
+</a>
+<br />
+    <textarea id="gen_key_text" cols="80" rows="15">
+Key-Type: DSA
+Key-Length: 1024
+Subkey-Type: ELG-E
+Subkey-Length: 1024
+Name-Real: Alice
+Name-Comment: with stupid passphrase
+Name-Email: alice@foo.bar
+Expire-Date: 0
+Passphrase: alice
+%commit
+%echo done
+    </textarea>
+  </div>
+
+  <!--
+  no possible in batch mode
+  <div id="gen_revoke" class="hidden">
+    <code>gpg --batch --gen-key /input.txt</code>
+    <br />
+  </div>
+  -->
+
+
+  <div id="import" class="hidden">
+    Paste key file here: (default is Linus' public key)<br />
+    <textarea id="import_text" cols="80" rows="15">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+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
+IyL2BqSQ370NPwTmSWJ7y5MSTx8=
+=sNmJ
+-----END PGP PUBLIC KEY BLOCK-----
+    </textarea>
+  </div>
+
+
+  <div id="sign_key" class="hidden">
+    <label>
+      Key ID to sign:
+      <input id="sign_key_id" type="text" />
+      (<code>76E21CBB</code> for Linus' if you imported it)
+    </label>
+    <br />
+    <label>
+      Passphrase:
+      <input id="sign_key_passwd" type="text" />
+      (default for Alice: <code>alice</code>)
+    </label>
+  </div>
+
+
+  <div id="decrypt" class="hidden">
+    <label>
+      Passphrase:
+      <input id="decrypt_passwd" type="text" />
+      (default for Alice: <code>alice</code>)
+    </label>
+    <br />
+    <label>
+      Data to decrypt
+      <br />
+      <textarea id="decrypt_text" cols="80" rows="15"></textarea>
+    </label>
+  </div>
+
+
+  <div id="sign" class="hidden">
+    <label>
+      Passphrase:
+      <input id="sign_passwd" type="text" />
+      (default for Alice: <code>alice</code>)
+    </label>
+    <br />
+    <label>
+      Data to sign
+      <br />
+      <textarea id="sign_text" cols="80" rows="15"></textarea>
+    </label>
+  </div>
+
+
+  <div id="help" class="hidden">
+    <h1></h1>
+    <p>
+      
+    </p>
+  </div>
+
+
+  <div id="verify" class="hidden">
+    <label>
+      Passphrase:
+      <input id="verify_passwd" type="text" />
+      (default for Alice: <code>alice</code>)
+    </label>
+    <br />
+    <label>
+      Data to verify:
+      <br />
+      <textarea id="verify_text" cols="80" rows="15"></textarea>
+    </label>
+    <br />
+    <label>
+      Signature:
+      <br />
+      <textarea id="signature_text" cols="80" rows="15"></textarea>
+    </label>
+  </div>
+
+
+  <div id="encrypt" class="hidden">
+    <label>
+      Recipient ID
+      <input id="encrypt_recipient_id" type="text" />
+      <code>989A0A87</code> is default for Alice and
+      <code>76E21CBB</code> for Linus' if you imported it
+    </label>
+    <br />
+    <label>
+      Passphrase:
+      <input id="encrypt_passwd" type="text" />
+      (default for Alice: <code>alice</code>)
+    </label>
+    <br />
+    <label>
+      Data to encrypt
+      <br />
+      <textarea id="encrypt_text" cols="80" rows="15"></textarea>
+    </label>
+  </div>
+
+
+  <div id="encrypt_symm" class="hidden">
+    <label>
+      Passphrase:
+      <input id="encrypt_symm_passwd" type="text" />
+    </label>
+    <br />
+    <label>
+      Data to encrypt
+      <br />
+      <textarea id="encrypt_symm_text" cols="80" rows="15"></textarea>
+    </label>
+  </div>
+
+
+  <div id="list_keys" class="hidden">
+    No options, just click run
+  </div>
+
+  <pre></pre>
+
+  <script src="demo.js"></script>
+</body>
+
+</html>

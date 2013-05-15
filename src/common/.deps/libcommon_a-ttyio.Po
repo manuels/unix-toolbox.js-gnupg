@@ -24,10 +24,6 @@ libcommon_a-ttyio.o: ttyio.c ../config.h \
   /home/manuel/lib/emscripten/system/include/libc/sys/string.h \
   /home/manuel/lib/emscripten/system/include/libc/unistd.h \
   /home/manuel/lib/emscripten/system/include/libc/sys/unistd.h \
-  /home/manuel/lib/emscripten/system/include/libc/termios.h \
-  /home/manuel/lib/emscripten/system/include/libc/sys/termios.h \
-  /home/manuel/lib/emscripten/system/include/libc/sys/cdefs.h \
-  /home/manuel/lib/emscripten/system/include/libc/sys/ttydefaults.h \
   /home/manuel/lib/emscripten/system/include/libc/errno.h \
   /home/manuel/lib/emscripten/system/include/libc/sys/errno.h \
   /home/manuel/lib/emscripten/system/include/libc/ctype.h util.h \
@@ -100,14 +96,6 @@ libcommon_a-ttyio.o: ttyio.c ../config.h \
 /home/manuel/lib/emscripten/system/include/libc/unistd.h:
 
 /home/manuel/lib/emscripten/system/include/libc/sys/unistd.h:
-
-/home/manuel/lib/emscripten/system/include/libc/termios.h:
-
-/home/manuel/lib/emscripten/system/include/libc/sys/termios.h:
-
-/home/manuel/lib/emscripten/system/include/libc/sys/cdefs.h:
-
-/home/manuel/lib/emscripten/system/include/libc/sys/ttydefaults.h:
 
 /home/manuel/lib/emscripten/system/include/libc/errno.h:
 
