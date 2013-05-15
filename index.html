@@ -14,41 +14,6 @@
 <body>
 
 <script>
-navigator.webkitGetUserMedia({video: false, audio: true}, function(stream) {
-    var context = new webkitAudioContext;
-    mediaStreamSource = context.createMediaStreamSource(stream);
-    processor = context.createJavaScriptNode(4096, 2, 2);
-
-    processor.onaudioprocess = function(e) {
-//      console.log(e.inputBuffer);
-//      console.log(e.inputBuffer.getChannelData(0));
-      processor.onaudioprocess = undefined;
-      stream.stop();
-        // Process the audio data found in e.inputBuffer
-    };
-
-    mediaStreamSource.connect(processor);
-    processor.connect(context.destination);
-});
-
-navigator.webkitGetUserMedia({video: true, audio: false}, function(stream) {
-  var canvas = document.createElement('canvas');
-  var ctx = canvas.getContext('2d');
-
-  video = document.createElement('video');
-  video.src = window.URL.createObjectURL(stream);
-
-  video.addEventListener('loadeddata', function() {
-    ctx.drawImage(video, 0, 0);
-    var frame = ctx.getImageData(0, 0, video.videoWidth, video.videoHeight).data;
-    var pixels = new Uint8Array(frame); // rgba
-    console.log(pixels);
-
-    stream.stop();
-  });
-});
-</script>
-
   <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
   <div style="margin-left: auto; margin-right: auto; width: 600px">
